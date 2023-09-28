@@ -1,2 +1,2 @@
 #!/bin/bas
-h
+rm /tmp/my_first_directory
