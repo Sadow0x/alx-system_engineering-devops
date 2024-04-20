@@ -1,6 +1,12 @@
 # Puppet script to install Flask version 2.1.0
 # This script installs Flask version 2.1.0 using pip3
 
+# Uninstall any existing Flask package
+package { 'python3-flask':
+  ensure   => absent,
+  provider => 'pip3',
+}
+
 # Install Flask package
 package { 'python3-flask':
   ensure   => '2.1.0',
