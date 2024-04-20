@@ -12,14 +12,15 @@ package { 'python3-werkzeug':
   provider => 'pip3',
 }
 
-# Install Flask package with specific versions
+# Install Flask package with specific version
 package { 'python3-flask':
   ensure   => '2.1.0',
   provider => 'pip3',
 }
 
+# Install Werkzeug package with specific version
 package { 'python3-werkzeug':
-  ensure   => '2.1.1', # Adjust version as needed
+  ensure   => '2.0.2',
   provider => 'pip3',
 }
 
